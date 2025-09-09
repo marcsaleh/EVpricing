@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5809b9bd9cc4852ce5e3c55b8c984550 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5809b9bd9cc4852ce5e3c55b8c984550" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5809b9bd9cc4852ce5e3c55b8c984550 = L.map(
+                "map_5809b9bd9cc4852ce5e3c55b8c984550",
+                {
+                    center: [61.09573426111113, -135.1639389333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b586bdb175e7204f8fcacd81971811e7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b586bdb175e7204f8fcacd81971811e7.addTo(map_5809b9bd9cc4852ce5e3c55b8c984550);
+        
+    
+            var marker_cluster_d0f118a368ae42b9e814df6ede78c016 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_aca5cd1311fd3a0c024b5d9f423e3db9 = L.marker(
+                [60.72360755, -135.061968],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_32f4b6ae5b30cb3478e17ec431016876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_aca5cd1311fd3a0c024b5d9f423e3db9.setIcon(icon_32f4b6ae5b30cb3478e17ec431016876);
+        
+    
+        var popup_cd531d1c91051ccbae8518e890a5ade5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaa66b26774c136cdaa6e2fd28274ee6 = $(`<div id="html_eaa66b26774c136cdaa6e2fd28274ee6" style="width: 100.0%; height: 100.0%;">Whitehorse Motors Ford<br>4178 4 Ave<br>Whitehorse</div>`)[0];
+                popup_cd531d1c91051ccbae8518e890a5ade5.setContent(html_eaa66b26774c136cdaa6e2fd28274ee6);
+            
+        
+
+        marker_aca5cd1311fd3a0c024b5d9f423e3db9.bindPopup(popup_cd531d1c91051ccbae8518e890a5ade5)
+        ;
+
+        
+    
+    
+            var marker_e32e4f50c47e8d1e09a4f879b398cd2a = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_1f770cc9d1255260ec0199346b11c8be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e32e4f50c47e8d1e09a4f879b398cd2a.setIcon(icon_1f770cc9d1255260ec0199346b11c8be);
+        
+    
+        var popup_b0723b03e8d54fe972262a9d05465dcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9a059126a52a094d779718ec67afbda = $(`<div id="html_c9a059126a52a094d779718ec67afbda" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_b0723b03e8d54fe972262a9d05465dcd.setContent(html_c9a059126a52a094d779718ec67afbda);
+            
+        
+
+        marker_e32e4f50c47e8d1e09a4f879b398cd2a.bindPopup(popup_b0723b03e8d54fe972262a9d05465dcd)
+        ;
+
+        
+    
+    
+            var marker_fbe79d529d46c8da5c1ba402a27e4634 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_c4002954c3e74abd8a6049e34d78915d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fbe79d529d46c8da5c1ba402a27e4634.setIcon(icon_c4002954c3e74abd8a6049e34d78915d);
+        
+    
+        var popup_6a3414e2d14ce65ff37217565006191e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5073fe08a057717d93071a28560bac6d = $(`<div id="html_5073fe08a057717d93071a28560bac6d" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_6a3414e2d14ce65ff37217565006191e.setContent(html_5073fe08a057717d93071a28560bac6d);
+            
+        
+
+        marker_fbe79d529d46c8da5c1ba402a27e4634.bindPopup(popup_6a3414e2d14ce65ff37217565006191e)
+        ;
+
+        
+    
+    
+            var marker_42c8686776f113e01d8b137812f0c2e4 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_7d77d8891e2bfd3c6d00ffa76a7327ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_42c8686776f113e01d8b137812f0c2e4.setIcon(icon_7d77d8891e2bfd3c6d00ffa76a7327ed);
+        
+    
+        var popup_36f53e3bc7346b67d51a973485f80a88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d28b0e851979fba8a70b47d4d1a20163 = $(`<div id="html_d28b0e851979fba8a70b47d4d1a20163" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_36f53e3bc7346b67d51a973485f80a88.setContent(html_d28b0e851979fba8a70b47d4d1a20163);
+            
+        
+
+        marker_42c8686776f113e01d8b137812f0c2e4.bindPopup(popup_36f53e3bc7346b67d51a973485f80a88)
+        ;
+
+        
+    
+    
+            var marker_7121574f2b73961d2d64e7d117612b8d = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_edfad00d6205cc25a21c89964bfd47cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7121574f2b73961d2d64e7d117612b8d.setIcon(icon_edfad00d6205cc25a21c89964bfd47cd);
+        
+    
+        var popup_8421aa959544805a63a02e0df97929bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23a23415afbb03886c2759f84f4565e8 = $(`<div id="html_23a23415afbb03886c2759f84f4565e8" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_8421aa959544805a63a02e0df97929bd.setContent(html_23a23415afbb03886c2759f84f4565e8);
+            
+        
+
+        marker_7121574f2b73961d2d64e7d117612b8d.bindPopup(popup_8421aa959544805a63a02e0df97929bd)
+        ;
+
+        
+    
+    
+            var marker_e9721327f3051fc43ec9d9c7d951c087 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_7b6e69109779874cba555ec735d4b317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e9721327f3051fc43ec9d9c7d951c087.setIcon(icon_7b6e69109779874cba555ec735d4b317);
+        
+    
+        var popup_21efb77cd91a6bf12a474dab9d391678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_609aa417a019456a074ed2f8fbaddb9d = $(`<div id="html_609aa417a019456a074ed2f8fbaddb9d" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_21efb77cd91a6bf12a474dab9d391678.setContent(html_609aa417a019456a074ed2f8fbaddb9d);
+            
+        
+
+        marker_e9721327f3051fc43ec9d9c7d951c087.bindPopup(popup_21efb77cd91a6bf12a474dab9d391678)
+        ;
+
+        
+    
+    
+            var marker_c299a1716d0292f5b016c2619787c971 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_8a40cdd1cd0e4ec4b05f6c9f5e5550a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c299a1716d0292f5b016c2619787c971.setIcon(icon_8a40cdd1cd0e4ec4b05f6c9f5e5550a8);
+        
+    
+        var popup_7f0800a6ab0c49b7b791681977436750 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cce537a499d288941fea68f43cdd6f0 = $(`<div id="html_4cce537a499d288941fea68f43cdd6f0" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_7f0800a6ab0c49b7b791681977436750.setContent(html_4cce537a499d288941fea68f43cdd6f0);
+            
+        
+
+        marker_c299a1716d0292f5b016c2619787c971.bindPopup(popup_7f0800a6ab0c49b7b791681977436750)
+        ;
+
+        
+    
+    
+            var marker_c246a232b1abdddeb2b819896a0c4426 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_74380e43a6392f01df9d04fc35a8c4b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c246a232b1abdddeb2b819896a0c4426.setIcon(icon_74380e43a6392f01df9d04fc35a8c4b4);
+        
+    
+        var popup_c899add00ebb2753651c2262c347b088 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2113bfdb863fb04bd36887085a4d9562 = $(`<div id="html_2113bfdb863fb04bd36887085a4d9562" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_c899add00ebb2753651c2262c347b088.setContent(html_2113bfdb863fb04bd36887085a4d9562);
+            
+        
+
+        marker_c246a232b1abdddeb2b819896a0c4426.bindPopup(popup_c899add00ebb2753651c2262c347b088)
+        ;
+
+        
+    
+    
+            var marker_b87930c4a6c5b0d980760e7522448374 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_2bc28522f111830a8fcaa20c012145d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b87930c4a6c5b0d980760e7522448374.setIcon(icon_2bc28522f111830a8fcaa20c012145d0);
+        
+    
+        var popup_f08acca26cc63509336a7cff50f9b0c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaeb96f6c698c4aa915b6a73c6b82aea = $(`<div id="html_eaeb96f6c698c4aa915b6a73c6b82aea" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_f08acca26cc63509336a7cff50f9b0c3.setContent(html_eaeb96f6c698c4aa915b6a73c6b82aea);
+            
+        
+
+        marker_b87930c4a6c5b0d980760e7522448374.bindPopup(popup_f08acca26cc63509336a7cff50f9b0c3)
+        ;
+
+        
+    
+    
+            var marker_09b272975b6147b51948074051c626d0 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_eee042667b84f766de40da5e835d8f6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_09b272975b6147b51948074051c626d0.setIcon(icon_eee042667b84f766de40da5e835d8f6d);
+        
+    
+        var popup_60694dc279ca6b43ad5e789b6d341617 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_620172e32bf045bfd0e6c400fb0f6185 = $(`<div id="html_620172e32bf045bfd0e6c400fb0f6185" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_60694dc279ca6b43ad5e789b6d341617.setContent(html_620172e32bf045bfd0e6c400fb0f6185);
+            
+        
+
+        marker_09b272975b6147b51948074051c626d0.bindPopup(popup_60694dc279ca6b43ad5e789b6d341617)
+        ;
+
+        
+    
+    
+            var marker_783880fd46a99814bccdffa3642e4740 = L.marker(
+                [60.716275, -135.048662],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_be4aa5ba65c1b202de191777afca8cde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_783880fd46a99814bccdffa3642e4740.setIcon(icon_be4aa5ba65c1b202de191777afca8cde);
+        
+    
+        var popup_e7a148846f43c5411c2741caed6d9fdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f964ce70314effdbd20815b6413cc0c2 = $(`<div id="html_f964ce70314effdbd20815b6413cc0c2" style="width: 100.0%; height: 100.0%;">Jim Smith Building - South parking lot<br>2071 2nd Avenue<br>Shawinigan</div>`)[0];
+                popup_e7a148846f43c5411c2741caed6d9fdc.setContent(html_f964ce70314effdbd20815b6413cc0c2);
+            
+        
+
+        marker_783880fd46a99814bccdffa3642e4740.bindPopup(popup_e7a148846f43c5411c2741caed6d9fdc)
+        ;
+
+        
+    
+    
+            var marker_0ca62d76a2429befa4a037c640df7e47 = L.marker(
+                [60.717871, -135.048494],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_63cb8505956b78147e9f794106203734 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0ca62d76a2429befa4a037c640df7e47.setIcon(icon_63cb8505956b78147e9f794106203734);
+        
+    
+        var popup_3acd67fea6bdf95ba2652a81a7288853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7d635e771cd5c59b4b57f1b4fd7bd97 = $(`<div id="html_b7d635e771cd5c59b4b57f1b4fd7bd97" style="width: 100.0%; height: 100.0%;">Tourism Business Centre<br>100 Hanson St<br>Whitehorse</div>`)[0];
+                popup_3acd67fea6bdf95ba2652a81a7288853.setContent(html_b7d635e771cd5c59b4b57f1b4fd7bd97);
+            
+        
+
+        marker_0ca62d76a2429befa4a037c640df7e47.bindPopup(popup_3acd67fea6bdf95ba2652a81a7288853)
+        ;
+
+        
+    
+    
+            var marker_170b46e040f868a12bebb6db977162eb = L.marker(
+                [60.717871, -135.048494],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_3303e400d87cce894e53e113f0481fb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_170b46e040f868a12bebb6db977162eb.setIcon(icon_3303e400d87cce894e53e113f0481fb0);
+        
+    
+        var popup_dd788b10d4b63310987c94913c8f83f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a959c992672d1213d8f25be16544158 = $(`<div id="html_6a959c992672d1213d8f25be16544158" style="width: 100.0%; height: 100.0%;">Tourism Business Centre<br>100 Hanson St<br>Whitehorse</div>`)[0];
+                popup_dd788b10d4b63310987c94913c8f83f5.setContent(html_6a959c992672d1213d8f25be16544158);
+            
+        
+
+        marker_170b46e040f868a12bebb6db977162eb.bindPopup(popup_dd788b10d4b63310987c94913c8f83f5)
+        ;
+
+        
+    
+    
+            var marker_e3675cb5cc72e27ae016a2cbaa638c6f = L.marker(
+                [60.717871, -135.048494],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_0cdc5e464bad21883a9f7e1cf460d88c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e3675cb5cc72e27ae016a2cbaa638c6f.setIcon(icon_0cdc5e464bad21883a9f7e1cf460d88c);
+        
+    
+        var popup_0c78deec3a94368fe99cf9f6c7e58d9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fff38d2f84d034e1c5d6c73455bfcddc = $(`<div id="html_fff38d2f84d034e1c5d6c73455bfcddc" style="width: 100.0%; height: 100.0%;">Tourism Business Centre<br>100 Hanson St<br>Whitehorse</div>`)[0];
+                popup_0c78deec3a94368fe99cf9f6c7e58d9d.setContent(html_fff38d2f84d034e1c5d6c73455bfcddc);
+            
+        
+
+        marker_e3675cb5cc72e27ae016a2cbaa638c6f.bindPopup(popup_0c78deec3a94368fe99cf9f6c7e58d9d)
+        ;
+
+        
+    
+    
+            var marker_1c04422a6f3bf14fd8bada90b9bd1dd0 = L.marker(
+                [60.717871, -135.048494],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_8ede77bfde8b58228e88d08ea079676c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1c04422a6f3bf14fd8bada90b9bd1dd0.setIcon(icon_8ede77bfde8b58228e88d08ea079676c);
+        
+    
+        var popup_a778cd28f41d08d9b2b68da1638e0be8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b4a58a8abae5590ebf70edeb58fc906 = $(`<div id="html_3b4a58a8abae5590ebf70edeb58fc906" style="width: 100.0%; height: 100.0%;">Tourism Business Centre<br>100 Hanson St<br>Whitehorse</div>`)[0];
+                popup_a778cd28f41d08d9b2b68da1638e0be8.setContent(html_3b4a58a8abae5590ebf70edeb58fc906);
+            
+        
+
+        marker_1c04422a6f3bf14fd8bada90b9bd1dd0.bindPopup(popup_a778cd28f41d08d9b2b68da1638e0be8)
+        ;
+
+        
+    
+    
+            var marker_59aba2b6300c64f090896a9eaa863909 = L.marker(
+                [60.725729, -135.056183],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_57b7507101b7e523eea506c900daefb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_59aba2b6300c64f090896a9eaa863909.setIcon(icon_57b7507101b7e523eea506c900daefb3);
+        
+    
+        var popup_48a894d61958a17c5dad9ba714518159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1092bc0cb12817f698914578ea917d61 = $(`<div id="html_1092bc0cb12817f698914578ea917d61" style="width: 100.0%; height: 100.0%;">Raven Inn and Suites<br>150 Keish Street (on 2nd Ave)<br>Whitehorse</div>`)[0];
+                popup_48a894d61958a17c5dad9ba714518159.setContent(html_1092bc0cb12817f698914578ea917d61);
+            
+        
+
+        marker_59aba2b6300c64f090896a9eaa863909.bindPopup(popup_48a894d61958a17c5dad9ba714518159)
+        ;
+
+        
+    
+    
+            var marker_40e340e360dec50ab224d23fd8198eba = L.marker(
+                [60.725729, -135.056183],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_0c6f09c5c948d7ecbcbdad573f6f777a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_40e340e360dec50ab224d23fd8198eba.setIcon(icon_0c6f09c5c948d7ecbcbdad573f6f777a);
+        
+    
+        var popup_58693d2fae50eff2b13c1ae44dd0c3d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68938bbad15ea9e778122873dd2e1a86 = $(`<div id="html_68938bbad15ea9e778122873dd2e1a86" style="width: 100.0%; height: 100.0%;">Raven Inn and Suites<br>150 Keish Street (on 2nd Ave)<br>Whitehorse</div>`)[0];
+                popup_58693d2fae50eff2b13c1ae44dd0c3d2.setContent(html_68938bbad15ea9e778122873dd2e1a86);
+            
+        
+
+        marker_40e340e360dec50ab224d23fd8198eba.bindPopup(popup_58693d2fae50eff2b13c1ae44dd0c3d2)
+        ;
+
+        
+    
+    
+            var marker_6b84fd3ce9d7cbcbfda44199b631e774 = L.marker(
+                [60.725729, -135.056183],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_a7d7b1b55bf3d4181af5dcc07f9567a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6b84fd3ce9d7cbcbfda44199b631e774.setIcon(icon_a7d7b1b55bf3d4181af5dcc07f9567a7);
+        
+    
+        var popup_c014e4010743045393e68cbd52928afc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad8ec2c717eef6a4df7f8d1c6bf93a2 = $(`<div id="html_fad8ec2c717eef6a4df7f8d1c6bf93a2" style="width: 100.0%; height: 100.0%;">Raven Inn and Suites<br>150 Keish Street (on 2nd Ave)<br>Whitehorse</div>`)[0];
+                popup_c014e4010743045393e68cbd52928afc.setContent(html_fad8ec2c717eef6a4df7f8d1c6bf93a2);
+            
+        
+
+        marker_6b84fd3ce9d7cbcbfda44199b631e774.bindPopup(popup_c014e4010743045393e68cbd52928afc)
+        ;
+
+        
+    
+    
+            var marker_3a57571dc7f41eea4555def3af777cb0 = L.marker(
+                [60.725729, -135.056183],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_3552e1516a1acb737954860bdb954171 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3a57571dc7f41eea4555def3af777cb0.setIcon(icon_3552e1516a1acb737954860bdb954171);
+        
+    
+        var popup_160834655c9f829fcd604a942c799bac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47c118b2cc3f0532a6af2a75473fbd1d = $(`<div id="html_47c118b2cc3f0532a6af2a75473fbd1d" style="width: 100.0%; height: 100.0%;">Raven Inn and Suites<br>150 Keish Street (on 2nd Ave)<br>Whitehorse</div>`)[0];
+                popup_160834655c9f829fcd604a942c799bac.setContent(html_47c118b2cc3f0532a6af2a75473fbd1d);
+            
+        
+
+        marker_3a57571dc7f41eea4555def3af777cb0.bindPopup(popup_160834655c9f829fcd604a942c799bac)
+        ;
+
+        
+    
+    
+            var marker_2633074700d9b5d816cf6679f7e74936 = L.marker(
+                [60.00485, -131.188155],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_ccc7ad23e29b9bde4d956696bcf3fcf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2633074700d9b5d816cf6679f7e74936.setIcon(icon_ccc7ad23e29b9bde4d956696bcf3fcf5);
+        
+    
+        var popup_73bf79ae488269f9663414a42e2c5388 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76f0415d637950a58129605cabd6ac2d = $(`<div id="html_76f0415d637950a58129605cabd6ac2d" style="width: 100.0%; height: 100.0%;">Swift River<br>Swift River Rest Area<br>Swift River</div>`)[0];
+                popup_73bf79ae488269f9663414a42e2c5388.setContent(html_76f0415d637950a58129605cabd6ac2d);
+            
+        
+
+        marker_2633074700d9b5d816cf6679f7e74936.bindPopup(popup_73bf79ae488269f9663414a42e2c5388)
+        ;
+
+        
+    
+    
+            var marker_929ed08f3d4b010ac98a72404d8f9fd5 = L.marker(
+                [60.717375, -135.051578],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_d343c0bcd2bb7c9fea5c4598ef556879 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_929ed08f3d4b010ac98a72404d8f9fd5.setIcon(icon_d343c0bcd2bb7c9fea5c4598ef556879);
+        
+    
+        var popup_083e080d046bbe921d13c8a2e9dab73e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8c10b01b36d658f411c64f1a1563fc1 = $(`<div id="html_f8c10b01b36d658f411c64f1a1563fc1" style="width: 100.0%; height: 100.0%;">Government of Yukon<br>206 Hanson St<br>Whitehorse</div>`)[0];
+                popup_083e080d046bbe921d13c8a2e9dab73e.setContent(html_f8c10b01b36d658f411c64f1a1563fc1);
+            
+        
+
+        marker_929ed08f3d4b010ac98a72404d8f9fd5.bindPopup(popup_083e080d046bbe921d13c8a2e9dab73e)
+        ;
+
+        
+    
+    
+            var marker_841e5e5d16b34ae8d6d01e9a20435495 = L.marker(
+                [60.717375, -135.051578],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_54a466b8d3514bc6227edb45bb05209c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_841e5e5d16b34ae8d6d01e9a20435495.setIcon(icon_54a466b8d3514bc6227edb45bb05209c);
+        
+    
+        var popup_d46e4216babd2266154df6e0eab5c0fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0123c9c30132d6f0c35e164250653919 = $(`<div id="html_0123c9c30132d6f0c35e164250653919" style="width: 100.0%; height: 100.0%;">Government of Yukon<br>206 Hanson St<br>Whitehorse</div>`)[0];
+                popup_d46e4216babd2266154df6e0eab5c0fd.setContent(html_0123c9c30132d6f0c35e164250653919);
+            
+        
+
+        marker_841e5e5d16b34ae8d6d01e9a20435495.bindPopup(popup_d46e4216babd2266154df6e0eab5c0fd)
+        ;
+
+        
+    
+    
+            var marker_7e3f84bd56c73b292fb3b09d9df8e140 = L.marker(
+                [60.717375, -135.051578],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_798afda12f9609d4927782bb71dd695a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7e3f84bd56c73b292fb3b09d9df8e140.setIcon(icon_798afda12f9609d4927782bb71dd695a);
+        
+    
+        var popup_eac7c40fc8c55b27a1c9fc7010c92c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3384b81e83c1ff70c8f94c89832b3336 = $(`<div id="html_3384b81e83c1ff70c8f94c89832b3336" style="width: 100.0%; height: 100.0%;">Government of Yukon<br>206 Hanson St<br>Whitehorse</div>`)[0];
+                popup_eac7c40fc8c55b27a1c9fc7010c92c8f.setContent(html_3384b81e83c1ff70c8f94c89832b3336);
+            
+        
+
+        marker_7e3f84bd56c73b292fb3b09d9df8e140.bindPopup(popup_eac7c40fc8c55b27a1c9fc7010c92c8f)
+        ;
+
+        
+    
+    
+            var marker_774576ce24f763e1ed254d242ad5205f = L.marker(
+                [60.717375, -135.051578],
+                {}
+            ).addTo(marker_cluster_d0f118a368ae42b9e814df6ede78c016);
+        
+    
+            var icon_04442d4ee693630a96875b862a7c6b8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_774576ce24f763e1ed254d242ad5205f.setIcon(icon_04442d4ee693630a96875b862a7c6b8f);
+        
+    
+        var popup_932f016df04b1fdbe4cafca0b5a8ae83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dda23563218b3d90511bd6dd67a60712 = $(`<div id="html_dda23563218b3d90511bd6dd67a60712" style="width: 100.0%; height: 100.0%;">Government of Yukon<br>206 Hanson St<br>Whitehorse</div>`)[0];
+                popup_932f016df04b1fdbe4cafca0b5a8ae83.setContent(html_dda23563218b3d90511bd6dd67a60712);
+            
+        
+
+        marker_774576ce24f763e1ed254d242ad5205f.bindPopup(popup_932f016df04b1fdbe4cafca0b5a8ae83)
+        ;
+
+        
+    
+    
+            marker_cluster_d0f118a368ae42b9e814df6ede78c016.addTo(map_5809b9bd9cc4852ce5e3c55b8c984550);
+        
+    
+            var marker_cluster_d99bf8b40b78fb79a5403362791a6a80 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_6387682e8d748b907f0cdd51aa56079e = L.marker(
+                [60.725472, -135.057056],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_4028c14acfcf4a52559700c5a1e75a5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6387682e8d748b907f0cdd51aa56079e.setIcon(icon_4028c14acfcf4a52559700c5a1e75a5b);
+        
+    
+        var popup_a81674552843c1e4db964c7a165dab7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5df793a3d7a7dda5e0297d6ea0cdd4e0 = $(`<div id="html_5df793a3d7a7dda5e0297d6ea0cdd4e0" style="width: 100.0%; height: 100.0%;">Whitehorse NorthLight Innovation<br>2180 2nd Ave<br>Whitehorse</div>`)[0];
+                popup_a81674552843c1e4db964c7a165dab7a.setContent(html_5df793a3d7a7dda5e0297d6ea0cdd4e0);
+            
+        
+
+        marker_6387682e8d748b907f0cdd51aa56079e.bindPopup(popup_a81674552843c1e4db964c7a165dab7a)
+        ;
+
+        
+    
+    
+            var marker_713abe6b724ae6cb440bae5e0c6cd9ff = L.marker(
+                [60.171361, -134.703889],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_09a90d57426aee11b6855318a0cf8ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_713abe6b724ae6cb440bae5e0c6cd9ff.setIcon(icon_09a90d57426aee11b6855318a0cf8ab4);
+        
+    
+        var popup_0916398300a78c0d00b20b77d86eb429 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2bb6be3ab495d3bae8fea87a57d0bc9 = $(`<div id="html_f2bb6be3ab495d3bae8fea87a57d0bc9" style="width: 100.0%; height: 100.0%;">Carcross/Tagish Learning Centre<br>Lot 1009, (km 106) Klondike Hwy<br>Carcross</div>`)[0];
+                popup_0916398300a78c0d00b20b77d86eb429.setContent(html_f2bb6be3ab495d3bae8fea87a57d0bc9);
+            
+        
+
+        marker_713abe6b724ae6cb440bae5e0c6cd9ff.bindPopup(popup_0916398300a78c0d00b20b77d86eb429)
+        ;
+
+        
+    
+    
+            var marker_ea1bd1d0cde21c43d58d7041505092eb = L.marker(
+                [60.762847, -137.514112],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_bc488e727923895e586603fe7af93903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ea1bd1d0cde21c43d58d7041505092eb.setIcon(icon_bc488e727923895e586603fe7af93903);
+        
+    
+        var popup_216d0968d1eeeb733e824258e6cc9b67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df75ccfa79a327e8b79cbd17daf3eaa7 = $(`<div id="html_df75ccfa79a327e8b79cbd17daf3eaa7" style="width: 100.0%; height: 100.0%;">Haines Junction Da Ku Cultural Centre<br>280 Alaska Highway<br>Haines Junction</div>`)[0];
+                popup_216d0968d1eeeb733e824258e6cc9b67.setContent(html_df75ccfa79a327e8b79cbd17daf3eaa7);
+            
+        
+
+        marker_ea1bd1d0cde21c43d58d7041505092eb.bindPopup(popup_216d0968d1eeeb733e824258e6cc9b67)
+        ;
+
+        
+    
+    
+            var marker_4d9659ea16321aa8813d7f158f6ba770 = L.marker(
+                [60.559724, -134.45138],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_bf7a88d6c21018c491856edf62feb85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4d9659ea16321aa8813d7f158f6ba770.setIcon(icon_bf7a88d6c21018c491856edf62feb85c);
+        
+    
+        var popup_7b5e8c592c7d4b5828a365366a60ec24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a64c7200b7f6e3a08b575248530e4bd5 = $(`<div id="html_a64c7200b7f6e3a08b575248530e4bd5" style="width: 100.0%; height: 100.0%;">Marsh Lake, Army Beach<br>1 Army Beach Drive<br>Marsh Lake</div>`)[0];
+                popup_7b5e8c592c7d4b5828a365366a60ec24.setContent(html_a64c7200b7f6e3a08b575248530e4bd5);
+            
+        
+
+        marker_4d9659ea16321aa8813d7f158f6ba770.bindPopup(popup_7b5e8c592c7d4b5828a365366a60ec24)
+        ;
+
+        
+    
+    
+            var marker_251b0e4c4e53fe49d9cfc8e48527b41c = L.marker(
+                [60.717917, -135.04886],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_d6900c64795c59e20de1621869dd03da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_251b0e4c4e53fe49d9cfc8e48527b41c.setIcon(icon_d6900c64795c59e20de1621869dd03da);
+        
+    
+        var popup_4b965375c500e7d635fcf1bc82ebd86a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01a4d6877feba33538607d3d535e055a = $(`<div id="html_01a4d6877feba33538607d3d535e055a" style="width: 100.0%; height: 100.0%;">Whitehorse Visitor Information Centre<br>100 Hanson street<br>Whitehorse</div>`)[0];
+                popup_4b965375c500e7d635fcf1bc82ebd86a.setContent(html_01a4d6877feba33538607d3d535e055a);
+            
+        
+
+        marker_251b0e4c4e53fe49d9cfc8e48527b41c.bindPopup(popup_4b965375c500e7d635fcf1bc82ebd86a)
+        ;
+
+        
+    
+    
+            var marker_e7cc0686d63b9e88bd2ab129affeca0a = L.marker(
+                [63.0376192, -136.677279],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_18e3062c15b60e9ee4eb8f3ff652b1b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e7cc0686d63b9e88bd2ab129affeca0a.setIcon(icon_18e3062c15b60e9ee4eb8f3ff652b1b0);
+        
+    
+        var popup_589b4d0d82d295f10d2d43926e7d2bc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a6d4e04b39132d2eb40b48538336aa5 = $(`<div id="html_4a6d4e04b39132d2eb40b48538336aa5" style="width: 100.0%; height: 100.0%;">Government of Yukon - Maintenance Compound<br>533 Klondike Hwy N<br>Stewart Crossing</div>`)[0];
+                popup_589b4d0d82d295f10d2d43926e7d2bc5.setContent(html_4a6d4e04b39132d2eb40b48538336aa5);
+            
+        
+
+        marker_e7cc0686d63b9e88bd2ab129affeca0a.bindPopup(popup_589b4d0d82d295f10d2d43926e7d2bc5)
+        ;
+
+        
+    
+    
+            var marker_d75b094850cd320a1097b0afc0dde33f = L.marker(
+                [64.06421, -139.431946],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_ee567f4ec8fe531a78883841530056e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d75b094850cd320a1097b0afc0dde33f.setIcon(icon_ee567f4ec8fe531a78883841530056e6);
+        
+    
+        var popup_d03a48c773c7e30b32fbb4351d80c29e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b6744f472cd2173af7684d8bcea6ad3 = $(`<div id="html_3b6744f472cd2173af7684d8bcea6ad3" style="width: 100.0%; height: 100.0%;">Dawson City Visitor Information Centre<br>1102 Front St<br>Dawson City</div>`)[0];
+                popup_d03a48c773c7e30b32fbb4351d80c29e.setContent(html_3b6744f472cd2173af7684d8bcea6ad3);
+            
+        
+
+        marker_d75b094850cd320a1097b0afc0dde33f.bindPopup(popup_d03a48c773c7e30b32fbb4351d80c29e)
+        ;
+
+        
+    
+    
+            var marker_bbaf57c4d0c8017b575a863f6979f8ea = L.marker(
+                [62.824073, -136.574142],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_14ab7b6ac74432cb12c12a189f0805d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bbaf57c4d0c8017b575a863f6979f8ea.setIcon(icon_14ab7b6ac74432cb12c12a189f0805d4);
+        
+    
+        var popup_b88b264c3451a5b4092142cfa3803428 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6f49ef04ceaa851b5c64e2031f04d21 = $(`<div id="html_b6f49ef04ceaa851b5c64e2031f04d21" style="width: 100.0%; height: 100.0%;">Pelly Crossing Health Centre<br>4 School Avenue<br>Pelly Crossing</div>`)[0];
+                popup_b88b264c3451a5b4092142cfa3803428.setContent(html_b6f49ef04ceaa851b5c64e2031f04d21);
+            
+        
+
+        marker_bbaf57c4d0c8017b575a863f6979f8ea.bindPopup(popup_b88b264c3451a5b4092142cfa3803428)
+        ;
+
+        
+    
+    
+            var marker_92201cf55a474402b40f9483a8a801af = L.marker(
+                [62.089224, -136.287197],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_b8367fe713e157fe00e7dd2ff1b68f92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_92201cf55a474402b40f9483a8a801af.setIcon(icon_b8367fe713e157fe00e7dd2ff1b68f92);
+        
+    
+        var popup_d6f8359f06a07488236b94f4654af4c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46469d7d92c24f9c0bd3c80f329d2e64 = $(`<div id="html_46469d7d92c24f9c0bd3c80f329d2e64" style="width: 100.0%; height: 100.0%;">Carmacks, Tantalus School/Library<br>121 Tantalus Crescent<br>Carmacks</div>`)[0];
+                popup_d6f8359f06a07488236b94f4654af4c8.setContent(html_46469d7d92c24f9c0bd3c80f329d2e64);
+            
+        
+
+        marker_92201cf55a474402b40f9483a8a801af.bindPopup(popup_d6f8359f06a07488236b94f4654af4c8)
+        ;
+
+        
+    
+    
+            var marker_ca2f2ae34141a974cc0d49f05d657759 = L.marker(
+                [63.594806, -135.897117],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_09fc344ec4df405f5bf5343b47c023ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ca2f2ae34141a974cc0d49f05d657759.setIcon(icon_09fc344ec4df405f5bf5343b47c023ca);
+        
+    
+        var popup_a71748a47bb39e2f90d6bdf5afe93766 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfa3875bd930266962f33a2799fbf1bf = $(`<div id="html_dfa3875bd930266962f33a2799fbf1bf" style="width: 100.0%; height: 100.0%;">Mayo Community Library<br>18 Centre St<br>Mayo</div>`)[0];
+                popup_a71748a47bb39e2f90d6bdf5afe93766.setContent(html_dfa3875bd930266962f33a2799fbf1bf);
+            
+        
+
+        marker_ca2f2ae34141a974cc0d49f05d657759.bindPopup(popup_a71748a47bb39e2f90d6bdf5afe93766)
+        ;
+
+        
+    
+    
+            var marker_1ee9c97ba3dc1ecef83c7c437b3a47ba = L.marker(
+                [60.061964, -128.711131],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_0c4ff57331d335032c305d0ecd3670dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1ee9c97ba3dc1ecef83c7c437b3a47ba.setIcon(icon_0c4ff57331d335032c305d0ecd3670dc);
+        
+    
+        var popup_cc1393ea78695609e9079a0b4d40e931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4375926accf1aeccb68e7f89eff7f4d9 = $(`<div id="html_4375926accf1aeccb68e7f89eff7f4d9" style="width: 100.0%; height: 100.0%;">Watson Lake, Northern Lights Centre<br>9th St. & Stikine Ave<br>Watson Lake</div>`)[0];
+                popup_cc1393ea78695609e9079a0b4d40e931.setContent(html_4375926accf1aeccb68e7f89eff7f4d9);
+            
+        
+
+        marker_1ee9c97ba3dc1ecef83c7c437b3a47ba.bindPopup(popup_cc1393ea78695609e9079a0b4d40e931)
+        ;
+
+        
+    
+    
+            var marker_38150163e47bd4f984fb69dce9caeef2 = L.marker(
+                [60.166908, -132.7097],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_dde3912936c7fcf1e303e904edb0467a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_38150163e47bd4f984fb69dce9caeef2.setIcon(icon_dde3912936c7fcf1e303e904edb0467a);
+        
+    
+        var popup_ab53161d01bf9c74332760870caf2972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f5b193cd61befacf6ee5e436505297a = $(`<div id="html_0f5b193cd61befacf6ee5e436505297a" style="width: 100.0%; height: 100.0%;">Teslin Marina<br>Nisutlin Drive, just off the Alaska Highway<br>Teslin</div>`)[0];
+                popup_ab53161d01bf9c74332760870caf2972.setContent(html_0f5b193cd61befacf6ee5e436505297a);
+            
+        
+
+        marker_38150163e47bd4f984fb69dce9caeef2.bindPopup(popup_ab53161d01bf9c74332760870caf2972)
+        ;
+
+        
+    
+    
+            var marker_49e6d1f7e5b501cc34c53fff21356372 = L.marker(
+                [61.979248, -132.453853],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_16b8714d01bc8b342ee345fa87aaf1df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_49e6d1f7e5b501cc34c53fff21356372.setIcon(icon_16b8714d01bc8b342ee345fa87aaf1df);
+        
+    
+        var popup_168eeafecd207887b18425b4bc52641b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf623dbe6fd2f3a31d6c5128196daf4 = $(`<div id="html_dcf623dbe6fd2f3a31d6c5128196daf4" style="width: 100.0%; height: 100.0%;">Ross River Road<br>Ross River Road<br>Ross River</div>`)[0];
+                popup_168eeafecd207887b18425b4bc52641b.setContent(html_dcf623dbe6fd2f3a31d6c5128196daf4);
+            
+        
+
+        marker_49e6d1f7e5b501cc34c53fff21356372.bindPopup(popup_168eeafecd207887b18425b4bc52641b)
+        ;
+
+        
+    
+    
+            var marker_961d09cb798a4e71f69fc8583fa8b921 = L.marker(
+                [62.229914, -133.355087],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_3e5f52e6f929202ca4377736fd1509c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_961d09cb798a4e71f69fc8583fa8b921.setIcon(icon_3e5f52e6f929202ca4377736fd1509c2);
+        
+    
+        var popup_97933583840598ea9435321c7ca93d38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adb58e790ddff45cada1064a63633cfa = $(`<div id="html_adb58e790ddff45cada1064a63633cfa" style="width: 100.0%; height: 100.0%;">Faro Visitor Centre<br>200 Campbell St<br>Faro</div>`)[0];
+                popup_97933583840598ea9435321c7ca93d38.setContent(html_adb58e790ddff45cada1064a63633cfa);
+            
+        
+
+        marker_961d09cb798a4e71f69fc8583fa8b921.bindPopup(popup_97933583840598ea9435321c7ca93d38)
+        ;
+
+        
+    
+    
+            var marker_295a435fcbb0078b1b41050000ffda93 = L.marker(
+                [60.718047, -135.048668],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_cbf9035f683475360d1237327f1db31f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_295a435fcbb0078b1b41050000ffda93.setIcon(icon_cbf9035f683475360d1237327f1db31f);
+        
+    
+        var popup_fbc75f78c3e25317d08e0717e9f707fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb88e574a02fd05353309e7284c82d04 = $(`<div id="html_cb88e574a02fd05353309e7284c82d04" style="width: 100.0%; height: 100.0%;">Yukon Visitor Information Centre - Whitehorse<br>100 Hanson S<br>Whitehorse</div>`)[0];
+                popup_fbc75f78c3e25317d08e0717e9f707fb.setContent(html_cb88e574a02fd05353309e7284c82d04);
+            
+        
+
+        marker_295a435fcbb0078b1b41050000ffda93.bindPopup(popup_fbc75f78c3e25317d08e0717e9f707fb)
+        ;
+
+        
+    
+    
+            var marker_848c85bf0e602e6496c1c70d35bd772b = L.marker(
+                [60.712197, -135.080079],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_31e2a2e421d8751d0415ec834b5c051a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_848c85bf0e602e6496c1c70d35bd772b.setIcon(icon_31e2a2e421d8751d0415ec834b5c051a);
+        
+    
+        var popup_3dad7319db4f4ee53f001da4f1ea1892 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bc26308ef630cfdc5a4107a42276525 = $(`<div id="html_7bc26308ef630cfdc5a4107a42276525" style="width: 100.0%; height: 100.0%;">Yukon Transportation Museum - Whitehorse<br>30 Electra Crescent<br>Whitehorse</div>`)[0];
+                popup_3dad7319db4f4ee53f001da4f1ea1892.setContent(html_7bc26308ef630cfdc5a4107a42276525);
+            
+        
+
+        marker_848c85bf0e602e6496c1c70d35bd772b.bindPopup(popup_3dad7319db4f4ee53f001da4f1ea1892)
+        ;
+
+        
+    
+    
+            var marker_846ab9544900a253ef29378566d08f2d = L.marker(
+                [60.758018, -136.166438],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_16fc7a569f2770d6f76e53e8ddf7647d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_846ab9544900a253ef29378566d08f2d.setIcon(icon_16fc7a569f2770d6f76e53e8ddf7647d);
+        
+    
+        var popup_9ad8088a9326f670f0ae0147252a3327 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_288550272edc8fa20924780907ccab81 = $(`<div id="html_288550272edc8fa20924780907ccab81" style="width: 100.0%; height: 100.0%;">Mendenhall<br>Mendenhall<br>Mendenhall</div>`)[0];
+                popup_9ad8088a9326f670f0ae0147252a3327.setContent(html_288550272edc8fa20924780907ccab81);
+            
+        
+
+        marker_846ab9544900a253ef29378566d08f2d.bindPopup(popup_9ad8088a9326f670f0ae0147252a3327)
+        ;
+
+        
+    
+    
+            var marker_3aaefd8c53ee6e6b9d6b90e6b115c2fa = L.marker(
+                [63.37567, -136.679478],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_60551cf3466e5fc57eaeb8b5dfb8918f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3aaefd8c53ee6e6b9d6b90e6b115c2fa.setIcon(icon_60551cf3466e5fc57eaeb8b5dfb8918f);
+        
+    
+        var popup_9e65e72e5545fdd846b6fb061d4d224e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af4dc6c7d6bf4dc78e018fa30a357c08 = $(`<div id="html_af4dc6c7d6bf4dc78e018fa30a357c08" style="width: 100.0%; height: 100.0%;">Stewart Crossing Rest Stop<br>North Klondike Highway, KM 534, 1 km south of Silver Trail junction<br>Stewart Crossing</div>`)[0];
+                popup_9e65e72e5545fdd846b6fb061d4d224e.setContent(html_af4dc6c7d6bf4dc78e018fa30a357c08);
+            
+        
+
+        marker_3aaefd8c53ee6e6b9d6b90e6b115c2fa.bindPopup(popup_9e65e72e5545fdd846b6fb061d4d224e)
+        ;
+
+        
+    
+    
+            var marker_f808cdcc03fd4dad42caf79a969acd00 = L.marker(
+                [61.351292, -138.996805],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_8c9d8e697f71c9d75de95d946fdc516c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f808cdcc03fd4dad42caf79a969acd00.setIcon(icon_8c9d8e697f71c9d75de95d946fdc516c);
+        
+    
+        var popup_6f5d25d83792a71f5a094c2f7e9690ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86e6e5c40e5ed302107346355c42d6c6 = $(`<div id="html_86e6e5c40e5ed302107346355c42d6c6" style="width: 100.0%; height: 100.0%;">Burwash Landing<br>KM 1701, Alaska Highway<br>Burwash Landing</div>`)[0];
+                popup_6f5d25d83792a71f5a094c2f7e9690ea.setContent(html_86e6e5c40e5ed302107346355c42d6c6);
+            
+        
+
+        marker_f808cdcc03fd4dad42caf79a969acd00.bindPopup(popup_6f5d25d83792a71f5a094c2f7e9690ea)
+        ;
+
+        
+    
+    
+            var marker_66bca57cba4f0de7d810699db9bd7df6 = L.marker(
+                [62.381924, -140.876445],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_11445d10672737797b685348158f43bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_66bca57cba4f0de7d810699db9bd7df6.setIcon(icon_11445d10672737797b685348158f43bc);
+        
+    
+        var popup_eac35b3fc61583a588472f584ad27f56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d9f78594f7d9266b1feeda1aa7ec936 = $(`<div id="html_0d9f78594f7d9266b1feeda1aa7ec936" style="width: 100.0%; height: 100.0%;">Beaver Creek<br>Km 1870, Alaska Hwy<br>Beaver Creek</div>`)[0];
+                popup_eac35b3fc61583a588472f584ad27f56.setContent(html_0d9f78594f7d9266b1feeda1aa7ec936);
+            
+        
+
+        marker_66bca57cba4f0de7d810699db9bd7df6.bindPopup(popup_eac35b3fc61583a588472f584ad27f56)
+        ;
+
+        
+    
+    
+            var marker_d737afa02f5a39d7ec37ff6aa4ea6da8 = L.marker(
+                [60.490499, -133.294827],
+                {}
+            ).addTo(marker_cluster_d99bf8b40b78fb79a5403362791a6a80);
+        
+    
+            var icon_dce88d572e7d120d65b70a7168189210 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d737afa02f5a39d7ec37ff6aa4ea6da8.setIcon(icon_dce88d572e7d120d65b70a7168189210);
+        
+    
+        var popup_f44be1e2fa46c57fb8ca1b92fe1c3a60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6260f96e08ea23627d1d5af81dac9d17 = $(`<div id="html_6260f96e08ea23627d1d5af81dac9d17" style="width: 100.0%; height: 100.0%;">Canol Road rest area<br>Canol Road rest area<br>Johnsons Crossing</div>`)[0];
+                popup_f44be1e2fa46c57fb8ca1b92fe1c3a60.setContent(html_6260f96e08ea23627d1d5af81dac9d17);
+            
+        
+
+        marker_d737afa02f5a39d7ec37ff6aa4ea6da8.bindPopup(popup_f44be1e2fa46c57fb8ca1b92fe1c3a60)
+        ;
+
+        
+    
+    
+            marker_cluster_d99bf8b40b78fb79a5403362791a6a80.addTo(map_5809b9bd9cc4852ce5e3c55b8c984550);
+        
+    
+            var locate_control_c1540a24c330bf04c244acd6fc5be86b = L.control.locate(
+                {}
+            ).addTo(map_5809b9bd9cc4852ce5e3c55b8c984550);
+            
+        
+    
+            var layer_control_ac6fde10a39370afc74a7aba14b0d262_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b586bdb175e7204f8fcacd81971811e7,
+                },
+                overlays :  {
+                    "Level 2 Charging" : marker_cluster_d0f118a368ae42b9e814df6ede78c016,
+                    "Level 3 Charging" : marker_cluster_d99bf8b40b78fb79a5403362791a6a80,
+                },
+            };
+            let layer_control_ac6fde10a39370afc74a7aba14b0d262 = L.control.layers(
+                layer_control_ac6fde10a39370afc74a7aba14b0d262_layers.base_layers,
+                layer_control_ac6fde10a39370afc74a7aba14b0d262_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_5809b9bd9cc4852ce5e3c55b8c984550);
+
+        
+</script>
+</html>

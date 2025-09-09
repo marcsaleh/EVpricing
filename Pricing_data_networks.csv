@@ -1,0 +1,20 @@
+Network,Charging station level,kWh Based Pricing,Time Based Pricing,Pricing Approach,Station Power Level Range (kW),Tiered Pricing for L3,Uniform Pricing within province,Idle Fees Applied,Reduced pricing through subscription,Network App and roaming partners
+Ford Blue Oval,L2,Yes,No,N/A,N/A,No,Yes,No,No,"FordPass including Tesla, Shell Recharge, ChargePoint, FLO, Circuit Électrique, EV Connect, Blink, and Red E."
+Ford Blue Oval,L3,Yes,No,Energy Based,120 - 240,No,Yes,No,No,"FordPass including Tesla, Shell Recharge, ChargePoint, FLO, Circuit Électrique, EV Connect, Blink, and Red E."
+Electrify Canada,L3,Yes,No,Energy Based,50 - 350,No,No,Yes,Yes,Electrify Canada app only; no roaming
+Tesla,L2,"Yes, most provinces","In NB, NS, PEI",N/A,13 - 16," In NB, NS, PEI",No,Yes,Only for non Telsa vehicles,Tesla app only; no roaming
+Tesla,L3,"Yes, most provinces","In NB, NS, PEI","Energy Based, except NB,NS, PEI in $/min",72 - 350," In NB, NS, PEI",No,Yes,Only for non Telsa vehicles,Tesla app only; no roaming
+Shell Recharge,L2,No,Yes,Time-based,6.2 - 7,No,No,No,No,"Shell Recharge app; roaming with ChargePoint, EV Connect, EVgo, FLO"
+Shell Recharge,L3,Yes except in MB,In MB,Energy Based,50 - 180 ,No,No,No,No,"Shell Recharge app; roaming with ChargePoint, EV Connect, EVgo, FLO"
+Petro Canada,L2,No,Yes,N/A,16.8,No,Yes,No,No,Petro-Canada app only; no roaming
+Petro Canada,L3,No,Yes,Time-based,50 - 350,No,Yes,No,No,Petro-Canada app only; no roaming
+Couche Tard/CircleK,L3,Yes,No,Energy Based,100 - 200,No,Yes,No,No,Charge app only; no roaming
+On The Run EV (Parkland),L3,Yes,No,Energy Based,100 - 400,No,No,No,No,Journie app only; no roaming
+BC Hydro,L2,Yes,No,Energy Based,7.2 - 19.2,No,Yes,No,No,"BC Hydro EV app; roaming with SWTCH, Shell Recharge, HyperCharge, Circuit Électrique, FLO"
+BC Hydro,L3,Yes,No,Energy Based,50 - 180,No,Yes,Yes (0.4$/min),No,"BC Hydro EV app; roaming with SWTCH, Shell Recharge, HyperCharge, Circuit Électrique, FLO"
+Electric Circuit (Hydro Quebec),L2,"Yes, for L3","Yes, for L2",Time-based,6.2 - 11.5,Yes,Yes,No,No,"Electric Circuit app; roaming with BC Hydro, Blink, ChargeLab, ChargePoint, Couche-Tard/Circle K, eCharge, FLO, Hypercharge, IVY, Shell Recharge, SWTCH"
+Electric Circuit (Hydro Quebec),L3,"Yes, for L3","Yes, for L2",Energy Based,50 - 180,Yes,Yes,Yes,No,"Electric Circuit app; roaming with BC Hydro, Blink, ChargeLab, ChargePoint, Couche-Tard/Circle K, eCharge, FLO, Hypercharge, IVY, Shell Recharge, SWTCH"
+Ivy (OPG and Hydro One),L2,"Yes, for L3","Yes, for L2",Time-based,7.2,No,Yes,No,No,Ivy app only; no roaming
+Ivy (OPG and Hydro One),L3,"Yes, for L3","Yes, for L2",Energy Based,50 - 100,No,Yes,No,No,Ivy app only; no roaming
+eCharge (NB power),L2,No,Yes,Time-based,6.2 - 7.2,Yes,Yes,No,No,eCharge Network app; roaming with FLO and Circuit Électrique
+eCharge (NB power),L3,No,Yes,Time-based,50 - 100,Yes,Yes,No,No,eCharge Network app; roaming with FLO and Circuit Électrique

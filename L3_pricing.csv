@@ -1,0 +1,12 @@
+Network,Alberta,British Columbia,Manitoba,New Brunswick,Newfounland and Labrador,Nova Scotia,Ontario,Prince Edward Island,Quebec,Saskatchewan
+Ford Blue Oval,$0.55 per kWh,X,$0.5 per kWh,$0.55 per kWh,X,X,$0.45 per kWh,X,$0.75 per kWh,N/A
+Electrify Canada,$0.6 - $0.7 per kWh,$0.6 - $0.7 per kWh,X,$0.6 per kWh,X,$0.6 per kWh,$0.6 - $0.7 per kWh,X,$0.6 - $0.7 per kWh,$0.6 per kWh
+Tesla,$0.51 - $0.63 per kWh,$0.21 - $0.53 per kWh,$0.29 - $0.49 per kWh,$0.43 - $2.26 per minute,X,$0.56 - $0.59 per kWh,$0.31 - $0.61 per kWh,$0.44 - $2.33 per minute,$0.25 - $0.46 per kWh,$0.57 - $0.61 per kWh
+Shell Recharge,X,$0.45 - $0.5 per kWh,$0.3 - $0.5 per kWh,X,X,X,$0.35 - $0.5 per kWh,X,X,$0.5 per kWh
+Petro Canada,$0.5 per minute,$0.27 - $0.5 per minute,$0.5 per minute,$0.33 - $0.5 per minute,X,$0.5 per minute,$0.33 - $0.5 per minute,X,$0.2 per minute,$0.5 per minute
+Couche Tard/CircleK,$0.39 - $0.49 per kWh,$0.39 per kWh,X,X,X,X,$0.49 per kWh,X,$0.49 per kWh,X
+On The Run EV (Parkland),$0.45 - $0.49 per kWh,$0.39 - $0.55 per kWh,X,X,X,X,$0.55 per kWh,X,X,X
+BC Hydro,X,$0.3609 per kWh,X,X,X,X,X,X,X,X
+Electric Circuit (Hydro Quebec),X,X,X,X,X,X,N/A,X,$0.37 - $0.61 per kWh,X
+Ivy (OPG and Hydro One),X,X,X,X,X,X,$0.69 per kWh,X,X,X
+eCharge (NB power),X,X,X,$15 - $20 per hour,X,X,X,X,N/A,X

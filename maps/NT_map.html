@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1e968f41f17c84a2a5cb7015b8666579 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1e968f41f17c84a2a5cb7015b8666579" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1e968f41f17c84a2a5cb7015b8666579 = L.map(
+                "map_1e968f41f17c84a2a5cb7015b8666579",
+                {
+                    center: [61.84249758699999, -115.6068774],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2966bcaa03c50e648e85be0cefe37e92 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2966bcaa03c50e648e85be0cefe37e92.addTo(map_1e968f41f17c84a2a5cb7015b8666579);
+        
+    
+            var marker_cluster_47a9ef2e84470a22090882bec20eaaf7 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_7c625a9bd056561e7eb2cf4439f82442 = L.marker(
+                [62.45343, -114.378129],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_c59c9ce79f2b9ade8081f63c7b511c97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7c625a9bd056561e7eb2cf4439f82442.setIcon(icon_c59c9ce79f2b9ade8081f63c7b511c97);
+        
+    
+        var popup_ac2f4d4d16f95c493b6c28af9c10e6d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c50b137123e1c0bbdc5613266636f7 = $(`<div id="html_97c50b137123e1c0bbdc5613266636f7" style="width: 100.0%; height: 100.0%;">YELLOWKNIFE YELLOWKNIFE-1<br>4904 53 St<br>Yellowknife</div>`)[0];
+                popup_ac2f4d4d16f95c493b6c28af9c10e6d8.setContent(html_97c50b137123e1c0bbdc5613266636f7);
+            
+        
+
+        marker_7c625a9bd056561e7eb2cf4439f82442.bindPopup(popup_ac2f4d4d16f95c493b6c28af9c10e6d8)
+        ;
+
+        
+    
+    
+            var marker_4af385dce3c93793061fdf0673c3bb5c = L.marker(
+                [62.45343, -114.378129],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_0651deeeda6e5e4445d55b130f7affc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4af385dce3c93793061fdf0673c3bb5c.setIcon(icon_0651deeeda6e5e4445d55b130f7affc0);
+        
+    
+        var popup_e6e83e647a55fa5385f74f477bb084d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9db3c84f69b25b84e428994140f530d = $(`<div id="html_a9db3c84f69b25b84e428994140f530d" style="width: 100.0%; height: 100.0%;">YELLOWKNIFE YELLOWKNIFE-1<br>4904 53 St<br>Yellowknife</div>`)[0];
+                popup_e6e83e647a55fa5385f74f477bb084d1.setContent(html_a9db3c84f69b25b84e428994140f530d);
+            
+        
+
+        marker_4af385dce3c93793061fdf0673c3bb5c.bindPopup(popup_e6e83e647a55fa5385f74f477bb084d1)
+        ;
+
+        
+    
+    
+            var marker_bfb7273bca9a16b36e8dee69129ee838 = L.marker(
+                [62.452, -114.37016],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_4f7dc1f036dacd08664116efb5bc7269 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bfb7273bca9a16b36e8dee69129ee838.setIcon(icon_4f7dc1f036dacd08664116efb5bc7269);
+        
+    
+        var popup_a47736de9c262e096a88cdffebff431a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a208f6c82afb028674a900d5de2e0043 = $(`<div id="html_a208f6c82afb028674a900d5de2e0043" style="width: 100.0%; height: 100.0%;">AEA EV Charging Station - Level 2<br>5102 51 St<br>Yellowknife</div>`)[0];
+                popup_a47736de9c262e096a88cdffebff431a.setContent(html_a208f6c82afb028674a900d5de2e0043);
+            
+        
+
+        marker_bfb7273bca9a16b36e8dee69129ee838.bindPopup(popup_a47736de9c262e096a88cdffebff431a)
+        ;
+
+        
+    
+    
+            var marker_534340a4ea53220b3104435f1f0ddeb0 = L.marker(
+                [68.37735774, -133.74963],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_897692b8cdb709b48e69ef81c143f0bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_534340a4ea53220b3104435f1f0ddeb0.setIcon(icon_897692b8cdb709b48e69ef81c143f0bd);
+        
+    
+        var popup_1b3b945fd7e837fd22c76808d69783d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caa319dd365fc1ddcda5f59a6fb378da = $(`<div id="html_caa319dd365fc1ddcda5f59a6fb378da" style="width: 100.0%; height: 100.0%;">Polar Tires - Tesla Destination<br>72 Industrial Rd<br>Inuvik</div>`)[0];
+                popup_1b3b945fd7e837fd22c76808d69783d5.setContent(html_caa319dd365fc1ddcda5f59a6fb378da);
+            
+        
+
+        marker_534340a4ea53220b3104435f1f0ddeb0.bindPopup(popup_1b3b945fd7e837fd22c76808d69783d5)
+        ;
+
+        
+    
+    
+            var marker_f84da92cd1f64151cf3ca9ea0f1ff784 = L.marker(
+                [60.80982, -115.785893],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_e4373e3d198e8b36dc6aeda1ca6b7ffd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f84da92cd1f64151cf3ca9ea0f1ff784.setIcon(icon_e4373e3d198e8b36dc6aeda1ca6b7ffd);
+        
+    
+        var popup_ea5f68461db21f353c4bd1a2ed46bbb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_215abc8b753e6c718ad02b8c553f0818 = $(`<div id="html_215abc8b753e6c718ad02b8c553f0818" style="width: 100.0%; height: 100.0%;">Hay River - Level 2<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_ea5f68461db21f353c4bd1a2ed46bbb0.setContent(html_215abc8b753e6c718ad02b8c553f0818);
+            
+        
+
+        marker_f84da92cd1f64151cf3ca9ea0f1ff784.bindPopup(popup_ea5f68461db21f353c4bd1a2ed46bbb0)
+        ;
+
+        
+    
+    
+            var marker_16998f245ae04ab713aa4c370c92564d = L.marker(
+                [60.80982, -115.785893],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_b870077ab617b7e29124f1f88fe75295 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_16998f245ae04ab713aa4c370c92564d.setIcon(icon_b870077ab617b7e29124f1f88fe75295);
+        
+    
+        var popup_2376ece22243a0e37e959e38231d6746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a00cd0c89252edd283418a32d9369760 = $(`<div id="html_a00cd0c89252edd283418a32d9369760" style="width: 100.0%; height: 100.0%;">Hay River - Level 2<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_2376ece22243a0e37e959e38231d6746.setContent(html_a00cd0c89252edd283418a32d9369760);
+            
+        
+
+        marker_16998f245ae04ab713aa4c370c92564d.bindPopup(popup_2376ece22243a0e37e959e38231d6746)
+        ;
+
+        
+    
+    
+            var marker_e5bc9c5356ec16392893a10e1c3f03fa = L.marker(
+                [62.832301, -116.049087],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_bc06859eb5d9da36667608dc644dfd58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e5bc9c5356ec16392893a10e1c3f03fa.setIcon(icon_bc06859eb5d9da36667608dc644dfd58);
+        
+    
+        var popup_af8d0b1a21165101b0b4756265ea0bfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0b818c7f942bb026d6ac9e92646d737 = $(`<div id="html_d0b818c7f942bb026d6ac9e92646d737" style="width: 100.0%; height: 100.0%;">Behchoko - Level 2<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_af8d0b1a21165101b0b4756265ea0bfc.setContent(html_d0b818c7f942bb026d6ac9e92646d737);
+            
+        
+
+        marker_e5bc9c5356ec16392893a10e1c3f03fa.bindPopup(popup_af8d0b1a21165101b0b4756265ea0bfc)
+        ;
+
+        
+    
+    
+            var marker_09cf1ad9da91b577b0b0449a4e9ead16 = L.marker(
+                [62.832301, -116.049087],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_4de2af5173cd38fb7fb6b43743517105 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_09cf1ad9da91b577b0b0449a4e9ead16.setIcon(icon_4de2af5173cd38fb7fb6b43743517105);
+        
+    
+        var popup_36567103d006533b9408e2d60dcbd5bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5407c1ec38303eb0073baedaea95e9cb = $(`<div id="html_5407c1ec38303eb0073baedaea95e9cb" style="width: 100.0%; height: 100.0%;">Behchoko - Level 2<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_36567103d006533b9408e2d60dcbd5bb.setContent(html_5407c1ec38303eb0073baedaea95e9cb);
+            
+        
+
+        marker_09cf1ad9da91b577b0b0449a4e9ead16.bindPopup(popup_36567103d006533b9408e2d60dcbd5bb)
+        ;
+
+        
+    
+    
+            var marker_f65de7b062b6eb020f8c637f68198738 = L.marker(
+                [60.003722, -111.890629],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_62d3a963a4d51ffea12a8ee7ebae8a18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f65de7b062b6eb020f8c637f68198738.setIcon(icon_62d3a963a4d51ffea12a8ee7ebae8a18);
+        
+    
+        var popup_e823e80e8f71c9fcc5263049927f1d81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6beadab64b62671841bf5b976f6aea86 = $(`<div id="html_6beadab64b62671841bf5b976f6aea86" style="width: 100.0%; height: 100.0%;">Fort Smith - Level 2<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_e823e80e8f71c9fcc5263049927f1d81.setContent(html_6beadab64b62671841bf5b976f6aea86);
+            
+        
+
+        marker_f65de7b062b6eb020f8c637f68198738.bindPopup(popup_e823e80e8f71c9fcc5263049927f1d81)
+        ;
+
+        
+    
+    
+            var marker_d28086993ed505cfc94b2f4b090f235b = L.marker(
+                [60.003722, -111.890629],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_871d5ea201f44deaa36a95e2c4fcc889 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d28086993ed505cfc94b2f4b090f235b.setIcon(icon_871d5ea201f44deaa36a95e2c4fcc889);
+        
+    
+        var popup_886675d2fea9855ad9ecf61cd4759865 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cd739b3608a970ce0e7ebaa45f89a8a = $(`<div id="html_0cd739b3608a970ce0e7ebaa45f89a8a" style="width: 100.0%; height: 100.0%;">Fort Smith - Level 2<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_886675d2fea9855ad9ecf61cd4759865.setContent(html_0cd739b3608a970ce0e7ebaa45f89a8a);
+            
+        
+
+        marker_d28086993ed505cfc94b2f4b090f235b.bindPopup(popup_886675d2fea9855ad9ecf61cd4759865)
+        ;
+
+        
+    
+    
+            var marker_30e7ac74e62241c574c7d0e2b977f7c3 = L.marker(
+                [60.813076, -115.787334],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_05ba25864dfc1c298743a3144b344ee1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_30e7ac74e62241c574c7d0e2b977f7c3.setIcon(icon_05ba25864dfc1c298743a3144b344ee1);
+        
+    
+        var popup_6fb7f15e1ab0e028d16f034f828ee765 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7da4bc1e7dcbb4c0d68d5fdb02a26783 = $(`<div id="html_7da4bc1e7dcbb4c0d68d5fdb02a26783" style="width: 100.0%; height: 100.0%;">Aurora Ford Hay River<br>922 Mackenzie Hwy<br>Hay River</div>`)[0];
+                popup_6fb7f15e1ab0e028d16f034f828ee765.setContent(html_7da4bc1e7dcbb4c0d68d5fdb02a26783);
+            
+        
+
+        marker_30e7ac74e62241c574c7d0e2b977f7c3.bindPopup(popup_6fb7f15e1ab0e028d16f034f828ee765)
+        ;
+
+        
+    
+    
+            var marker_ce8ce2a62a5ae2f3b35008d16688a1c7 = L.marker(
+                [60.813076, -115.787334],
+                {}
+            ).addTo(marker_cluster_47a9ef2e84470a22090882bec20eaaf7);
+        
+    
+            var icon_68443c5e2d9655669ec7409c16bb6062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flash", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ce8ce2a62a5ae2f3b35008d16688a1c7.setIcon(icon_68443c5e2d9655669ec7409c16bb6062);
+        
+    
+        var popup_5f5e6247b7997eb9799b323e7090cfce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d035e7d0fb1582bc049d21cc2dd8dc1 = $(`<div id="html_4d035e7d0fb1582bc049d21cc2dd8dc1" style="width: 100.0%; height: 100.0%;">Aurora Ford Hay River<br>922 Mackenzie Hwy<br>Hay River</div>`)[0];
+                popup_5f5e6247b7997eb9799b323e7090cfce.setContent(html_4d035e7d0fb1582bc049d21cc2dd8dc1);
+            
+        
+
+        marker_ce8ce2a62a5ae2f3b35008d16688a1c7.bindPopup(popup_5f5e6247b7997eb9799b323e7090cfce)
+        ;
+
+        
+    
+    
+            marker_cluster_47a9ef2e84470a22090882bec20eaaf7.addTo(map_1e968f41f17c84a2a5cb7015b8666579);
+        
+    
+            var marker_cluster_491f56c79273dc1c157496a62d10c965 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_adf610fb5ed85a45f4f514ddb046d441 = L.marker(
+                [62.456931, -114.379759],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_9270d981093ad80f97883112cac0fe89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_adf610fb5ed85a45f4f514ddb046d441.setIcon(icon_9270d981093ad80f97883112cac0fe89);
+        
+    
+        var popup_3658f2e0947393581c0e9014d7c88a90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d009de636235d19002e1788510524c97 = $(`<div id="html_d009de636235d19002e1788510524c97" style="width: 100.0%; height: 100.0%;">Prince of Wales Northern Heritage Centre<br>4750 48th Street<br>Yellowknife</div>`)[0];
+                popup_3658f2e0947393581c0e9014d7c88a90.setContent(html_d009de636235d19002e1788510524c97);
+            
+        
+
+        marker_adf610fb5ed85a45f4f514ddb046d441.bindPopup(popup_3658f2e0947393581c0e9014d7c88a90)
+        ;
+
+        
+    
+    
+            var marker_80b2822c37d48220c4313e9a333a24a5 = L.marker(
+                [62.446281, -114.408761],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_1ce181225fada3739d0424bec7cb4b94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_80b2822c37d48220c4313e9a333a24a5.setIcon(icon_1ce181225fada3739d0424bec7cb4b94);
+        
+    
+        var popup_f24bd788ceca0a17bd7c8f4d042ff031 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c4f33e4bfbde3abddf540e1c91a7d2c = $(`<div id="html_0c4f33e4bfbde3abddf540e1c91a7d2c" style="width: 100.0%; height: 100.0%;">Northland Utilities Office<br>481 Range Lake Road<br>Yellowknife</div>`)[0];
+                popup_f24bd788ceca0a17bd7c8f4d042ff031.setContent(html_0c4f33e4bfbde3abddf540e1c91a7d2c);
+            
+        
+
+        marker_80b2822c37d48220c4313e9a333a24a5.bindPopup(popup_f24bd788ceca0a17bd7c8f4d042ff031)
+        ;
+
+        
+    
+    
+            var marker_a9feefdfbd3cb097275eb551354db551 = L.marker(
+                [60.80982, -115.785893],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_9f47531bf2ad60e35ec7dc3a746320e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a9feefdfbd3cb097275eb551354db551.setIcon(icon_9f47531bf2ad60e35ec7dc3a746320e5);
+        
+    
+        var popup_11d7bad6dfbc2b3dafc19bea8f057300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c42c9e16ebcd8598f6d0a44b94a86ef = $(`<div id="html_9c42c9e16ebcd8598f6d0a44b94a86ef" style="width: 100.0%; height: 100.0%;">Hay River - Level 3<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_11d7bad6dfbc2b3dafc19bea8f057300.setContent(html_9c42c9e16ebcd8598f6d0a44b94a86ef);
+            
+        
+
+        marker_a9feefdfbd3cb097275eb551354db551.bindPopup(popup_11d7bad6dfbc2b3dafc19bea8f057300)
+        ;
+
+        
+    
+    
+            var marker_cc23c965cdbd9926a70c8abe1425165c = L.marker(
+                [60.80982, -115.785893],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_4aeed0b247fa07924e075b8336214ded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cc23c965cdbd9926a70c8abe1425165c.setIcon(icon_4aeed0b247fa07924e075b8336214ded);
+        
+    
+        var popup_613cb826958c23bbfa3de707cf4bcdd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24bbc23f92c25f763a61ddeeef85eaff = $(`<div id="html_24bbc23f92c25f763a61ddeeef85eaff" style="width: 100.0%; height: 100.0%;">Hay River - Level 3<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_613cb826958c23bbfa3de707cf4bcdd7.setContent(html_24bbc23f92c25f763a61ddeeef85eaff);
+            
+        
+
+        marker_cc23c965cdbd9926a70c8abe1425165c.bindPopup(popup_613cb826958c23bbfa3de707cf4bcdd7)
+        ;
+
+        
+    
+    
+            var marker_3afa3a94cba50220e0337823143f3601 = L.marker(
+                [62.832077, -116.049087],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_ab85e4f4c86eda1d29257bc58ede20ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3afa3a94cba50220e0337823143f3601.setIcon(icon_ab85e4f4c86eda1d29257bc58ede20ca);
+        
+    
+        var popup_aeb6988ef511881ec751855822de40f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f3503784d2aa1d0f8f8f959b45ec642 = $(`<div id="html_8f3503784d2aa1d0f8f8f959b45ec642" style="width: 100.0%; height: 100.0%;">Behchoko - Level 3<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_aeb6988ef511881ec751855822de40f3.setContent(html_8f3503784d2aa1d0f8f8f959b45ec642);
+            
+        
+
+        marker_3afa3a94cba50220e0337823143f3601.bindPopup(popup_aeb6988ef511881ec751855822de40f3)
+        ;
+
+        
+    
+    
+            var marker_59b5f715c434edd4f4c870a43672ff96 = L.marker(
+                [62.832077, -116.049087],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_28c3f3accfb4ba1736d5ffa87702652f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_59b5f715c434edd4f4c870a43672ff96.setIcon(icon_28c3f3accfb4ba1736d5ffa87702652f);
+        
+    
+        var popup_af8e06024d6b31666d531ffb9148a079 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b39f72943247e3327c365288fdcada2 = $(`<div id="html_5b39f72943247e3327c365288fdcada2" style="width: 100.0%; height: 100.0%;">Behchoko - Level 3<br>4 Capital Drive<br>Hay River</div>`)[0];
+                popup_af8e06024d6b31666d531ffb9148a079.setContent(html_5b39f72943247e3327c365288fdcada2);
+            
+        
+
+        marker_59b5f715c434edd4f4c870a43672ff96.bindPopup(popup_af8e06024d6b31666d531ffb9148a079)
+        ;
+
+        
+    
+    
+            var marker_4a663721532a7728871924abe046a9e6 = L.marker(
+                [60.004445, -111.888567],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_a316e7ca5928354a28018849c6a3ff88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4a663721532a7728871924abe046a9e6.setIcon(icon_a316e7ca5928354a28018849c6a3ff88);
+        
+    
+        var popup_12597f2c9589be2a662dc3addc4f5e92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40a539a290fe200f2c77efb9f205deaa = $(`<div id="html_40a539a290fe200f2c77efb9f205deaa" style="width: 100.0%; height: 100.0%;">Fort Smith - Level 3<br>80 King Street<br>Fort Smith</div>`)[0];
+                popup_12597f2c9589be2a662dc3addc4f5e92.setContent(html_40a539a290fe200f2c77efb9f205deaa);
+            
+        
+
+        marker_4a663721532a7728871924abe046a9e6.bindPopup(popup_12597f2c9589be2a662dc3addc4f5e92)
+        ;
+
+        
+    
+    
+            var marker_822fed7654330ede53ac29305960e21d = L.marker(
+                [60.004445, -111.888567],
+                {}
+            ).addTo(marker_cluster_491f56c79273dc1c157496a62d10c965);
+        
+    
+            var icon_b5d5c8a0a80a07bdf5b1998166650a40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_822fed7654330ede53ac29305960e21d.setIcon(icon_b5d5c8a0a80a07bdf5b1998166650a40);
+        
+    
+        var popup_f5251d1e83386f7cdc67efeb78e57139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ef69b28709172b353cc6125c77b7b4b = $(`<div id="html_4ef69b28709172b353cc6125c77b7b4b" style="width: 100.0%; height: 100.0%;">Fort Smith - Level 3<br>80 King Street<br>Fort Smith</div>`)[0];
+                popup_f5251d1e83386f7cdc67efeb78e57139.setContent(html_4ef69b28709172b353cc6125c77b7b4b);
+            
+        
+
+        marker_822fed7654330ede53ac29305960e21d.bindPopup(popup_f5251d1e83386f7cdc67efeb78e57139)
+        ;
+
+        
+    
+    
+            marker_cluster_491f56c79273dc1c157496a62d10c965.addTo(map_1e968f41f17c84a2a5cb7015b8666579);
+        
+    
+            var locate_control_526b1cc2a8cd5d1fd8de6ae83cbef52e = L.control.locate(
+                {}
+            ).addTo(map_1e968f41f17c84a2a5cb7015b8666579);
+            
+        
+    
+            var layer_control_f47e343f411d0072426f082f8e7f316e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_2966bcaa03c50e648e85be0cefe37e92,
+                },
+                overlays :  {
+                    "Level 2 Charging" : marker_cluster_47a9ef2e84470a22090882bec20eaaf7,
+                    "Level 3 Charging" : marker_cluster_491f56c79273dc1c157496a62d10c965,
+                },
+            };
+            let layer_control_f47e343f411d0072426f082f8e7f316e = L.control.layers(
+                layer_control_f47e343f411d0072426f082f8e7f316e_layers.base_layers,
+                layer_control_f47e343f411d0072426f082f8e7f316e_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_1e968f41f17c84a2a5cb7015b8666579);
+
+        
+</script>
+</html>
