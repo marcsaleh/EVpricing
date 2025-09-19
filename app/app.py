@@ -5,9 +5,41 @@ import folium
 from folium.plugins import MarkerCluster, LocateControl
 from streamlit_folium import st_folium
 
+# Set the page config with a custom title, favicon, and hide the Streamlit menu
+st.set_page_config(
+    page_title="ChargeCompare",  # Custom tab title
+    page_icon="logo_white_background - Copy.jpg",  # Path to your custom favicon
+    #initial_sidebar_state="collapsed",  # Collapse the sidebar initially
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None
+    }
+)
+
+
+import uuid
+from datetime import datetime
+from opencensus.ext.azure.log_exporter import AzureLogHandler
+import logging
+
+# Replace with your Azure Application Insights Connection String
+CONNECTION_STRING = "InstrumentationKey=4c91cae0-735c-4d2e-bf0c-01782744234f;IngestionEndpoint=https://canadacentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://canadacentral.livediagnostics.monitor.azure.com/;ApplicationId=6e461640-80ec-46f6-86d3-1456c03c1b35"
+
+## Set up logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+logger.addHandler(AzureLogHandler(connection_string=CONNECTION_STRING))
+
+# Track unique sessions
+if "session_id" not in st.session_state:
+    st.session_state["session_id"] = str(uuid.uuid4())  # Generate a unique session ID
+    session_start_time = datetime.now().isoformat()
+    logger.info(f"New user session: {st.session_state['session_id']} at {session_start_time}")
+
 
 # Main page title
-st.title("Public EV Charging Pricing in Canada")
+st.title("ChargeCompare: Explore Public EV Charging in Canada")
 
 st.markdown("""
 This dashboard explores **public electric vehicle (EV) charging infrastructure across Canada**, with a focus on:
@@ -19,7 +51,7 @@ It helps you make sense of station availability, operator categories, and pricin
 """)
 
 
-st.sidebar.title("About This Tool")
+st.sidebar.title("About ChargeCompare")
 st.sidebar.markdown("""
 This tool helps users explore how **public EV charging pricing** varies across **Canadian provinces**, with a focus on differences by:
 
@@ -37,12 +69,15 @@ Charging networks that are **centrally managed** with consistent pricing, brandi
 **Non-Centralized Charge Point Operators**  
 Charging stations run by **individual site hosts** (e.g., businesses or municipalities) using platforms like **FLO** or **ChargePoint**. They appear on provider apps and share a common interface, but **pricing, access, and maintenance are set locally**, leading to more variation across stations.
 
----
-
-⚠️ Disclaimer
-This tool is for **informational and awareness purposes only**. It does **not provide real-time prices** or exact fees at individual stations. For current pricing, please consult the charging network’s app.
-""")
+---                    
                     
+⚠️ **Disclaimer**  
+This tool is for **informational and awareness purposes only**.  
+It does **not provide real-time prices** or exact fees at individual stations.  
+For current pricing, please consult the charging network’s app.
+
+---
+""")
 
 #charging_ports = pd.read_csv("alt_fuel_stations_ev_charging_units (May 19 2025).csv")
 
